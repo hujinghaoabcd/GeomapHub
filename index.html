@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GeomapHub — 面向地理空间数据、地图服务与空间分析的一站式开放平台。"
+    />
+    <meta name="theme-color" content="#06101f" />
+    <title>GeomapHub — 探索开放地理空间世界</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" aria-label="主导航">
+        <a class="brand" href="#top" aria-label="GeomapHub 首页">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <span>GeomapHub</span>
+        </a>
+
+        <nav class="site-nav" aria-label="页面导航">
+          <a href="#capabilities">平台能力</a>
+          <a href="#workflow">使用流程</a>
+          <a href="https://github.com/hujinghaoabcd/GeomapHub">GitHub</a>
+        </nav>
+
+        <a class="header-cta" href="#capabilities">开始探索</a>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="eyebrow">
+              <span class="status-dot" aria-hidden="true"></span>
+              Open geospatial workspace
+            </div>
+
+            <h1 id="hero-title">
+              连接数据、地图与分析，<br />
+              <span>看见空间的价值。</span>
+            </h1>
+
+            <p class="hero-description">
+              GeomapHub 面向开放地理数据管理、在线地图服务与空间处理，
+              帮助研究者和开发者更顺畅地发现、组织、分析并发布地理空间内容。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#capabilities">
+                探索平台能力
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="button button-secondary" href="https://github.com/hujinghaoabcd/GeomapHub">
+                查看源代码
+              </a>
+            </div>
+
+            <dl class="hero-stats" aria-label="平台特性">
+              <div>
+                <dt>Open</dt>
+                <dd>开放架构</dd>
+              </div>
+              <div>
+                <dt>Web GIS</dt>
+                <dd>地图原生</dd>
+              </div>
+              <div>
+                <dt>Extensible</dt>
+                <dd>灵活扩展</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="globe-stage" aria-label="可交互发光数字地球">
+            <div class="globe-backlight" aria-hidden="true"></div>
+            <canvas id="globe-canvas" role="img" aria-label="自动旋转、可拖拽的发光数字地球"></canvas>
+            <div class="globe-hud globe-hud-top" aria-hidden="true">
+              <span>GLOBAL LAYER</span>
+              <strong>ONLINE</strong>
+            </div>
+            <div class="globe-hud globe-hud-bottom" aria-hidden="true">
+              <span class="hud-pulse"></span>
+              <span>Live geospatial network</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="capabilities" id="capabilities" aria-labelledby="capabilities-title">
+          <div class="section-heading">
+            <p>CORE CAPABILITIES</p>
+            <h2 id="capabilities-title">从数据到地图，一站式组织空间工作流</h2>
+          </div>
+
+          <div class="capability-grid">
+            <article class="capability-card">
+              <span class="card-index">01</span>
+              <div class="card-icon" aria-hidden="true">⌁</div>
+              <h3>空间数据管理</h3>
+              <p>集中组织矢量、栅格、瓦片与服务资源，建立清晰可追踪的数据目录。</p>
+            </article>
+
+            <article class="capability-card">
+              <span class="card-index">02</span>
+              <div class="card-icon" aria-hidden="true">◎</div>
+              <h3>在线地图表达</h3>
+              <p>组合底图、专题图层和交互组件，快速构建现代化 Web GIS 体验。</p>
+            </article>
+
+            <article class="capability-card">
+              <span class="card-index">03</span>
+              <div class="card-icon" aria-hidden="true">⌘</div>
+              <h3>空间分析处理</h3>
+              <p>以模块化方式接入空间处理能力，让数据准备、分析与成果发布相互衔接。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="workflow" id="workflow" aria-labelledby="workflow-title">
+          <div>
+            <p class="section-kicker">A CLEAR WORKFLOW</p>
+            <h2 id="workflow-title">发现、处理、发布</h2>
+          </div>
+          <ol>
+            <li><span>1</span>连接空间数据与地图服务</li>
+            <li><span>2</span>组织图层并执行分析流程</li>
+            <li><span>3</span>发布可访问的地图成果</li>
+          </ol>
+        </section>
+      </main>
+
+      <footer>
+        <span>© 2026 GeomapHub</span>
+        <span>Open geospatial infrastructure</span>
+      </footer>
+    </div>
+
+    <script src="./globe.js" defer></script>
+  </body>
+</html>
